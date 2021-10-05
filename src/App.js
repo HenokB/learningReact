@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Person from "./Person/Person";
-
+import Counter from "./components/counter";
 class App extends Component {
   state = {
     persons: [
@@ -79,6 +79,7 @@ class App extends Component {
           name={this.state.persons[2].name}
           age={this.state.persons[2].age}
         />
+      <Counter/>
       </div>
     );
   }
