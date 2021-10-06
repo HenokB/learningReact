@@ -5,7 +5,7 @@ class Person extends Component {
     const {click, name, age, children, changed} = this.props;
     
     return (
-      <div>
+      <div className="App-header">
         <h1 onClick={click}>
           I am {name} and I am {age} years old
         </h1>
