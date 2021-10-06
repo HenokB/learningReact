@@ -62,7 +62,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App-header">
         <button onClick={this.switchNameHandler}>SwitchName</button>
         <h1>APPLE BALL REACT</h1>
         <Person
