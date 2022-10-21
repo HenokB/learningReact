@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component, useState, useCallback } from 'react';
+import { Calendar } from '@natscale/react-calendar';
 import "./App.css";
 import Person from "./Person/Person";
 import Counter from "./components/counter";
@@ -61,6 +62,14 @@ class App extends Component {
   };
 
   render() {
+    const [value, setValue] = useState();
+  
+    const onChange = useCallback(
+      (value) => {
+        setValue(value);
+      },
+      [setValue],
+    );
     return (
       <div className="App-header">
         <button onClick={this.switchNameHandler}>SwitchName</button>
@@ -80,6 +89,10 @@ class App extends Component {
           age={this.state.persons[2].age}
         />
       <Counter/>
+    <div>
+      <h1>Calendar - GeeksforGeeks</h1>
+      <Calendar value={value} onChange={onChange} />
+    </div>
       </div>
     );
   }
