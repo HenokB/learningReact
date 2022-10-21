@@ -17,6 +17,10 @@ class App extends Component {
         name: "Manu",
         age: 30,
       },
+      {
+       name: "Ashish",
+       age: 21,
+      },
     ],
   };
 
@@ -36,6 +40,10 @@ class App extends Component {
         {
           name: "Manu",
           age: 20,
+        },
+        {
+          name: "Ashish",
+          age: 21,
         },
       ],
     });
